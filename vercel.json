@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "src": "/live2d/(.*)",
+      "dest": "https://raw.githubusercontent.com/imuncle/live2d/master/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    }
+  ]
+}
